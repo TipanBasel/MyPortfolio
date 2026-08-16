@@ -6,7 +6,7 @@
 export const personalInfo = {
   name: "Tipan Basel",
   status: "AVAILABLE FOR OPPORTUNITIES",
-  role: "AI Engineer in the Making",
+  role: "Computer Engineer",
   subtitle: "Machine Learning • Deep Learning • RAG • Software Development",
   shortBio: "Computer Engineering Graduate passionate about building practical AI systems that solve real-world problems.",
   fullBio: "I am a Computer Engineering graduate from Advanced College of Engineering and Management (ACEM) in Kathmandu, with a strong interest in Artificial Intelligence, Machine Learning, and software engineering. My focus is on creating AI systems that are practical, reliable, and genuinely useful.",

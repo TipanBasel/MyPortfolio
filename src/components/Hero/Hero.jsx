@@ -12,7 +12,7 @@ import {
 import tipanImg from '../../assets/tipan.jpg';
 
 const TITLES = [
-  "AI Engineer in the Making",
+  "Computer Engineer",
   "RAG Systems Builder",
   "Deep Learning & Vision Specialist",
   "Computer Engineering Graduate"
@@ -70,32 +70,15 @@ export default function Hero({ onOpenResume }) {
           {/* Left Column: Introduction & CTAs */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             
-            {/* Profile Avatar & Status Pill */}
-            <div className="flex items-center gap-4 mb-6">
-              <div className="relative group shrink-0">
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
-                <img 
-                  src={tipanImg} 
-                  alt="Tipan Basel" 
-                  className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover object-top border-2 border-white dark:border-slate-900 shadow-md transition-transform duration-300 group-hover:scale-105"
-                />
-                <span className="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-900 shadow-xs" title="Available for Opportunities" />
-              </div>
-
-              <div className="flex flex-col">
-                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-500/30 text-emerald-800 dark:text-emerald-400 text-xs font-mono shadow-sm">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                  </span>
-                  <span className="font-semibold tracking-wider uppercase text-[11px]">
-                    {personalInfo.status}
-                  </span>
-                </div>
-                <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-1 pl-1">
-                  Kathmandu, Nepal • ACEM
-                </span>
-              </div>
+            {/* Status Pill */}
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-100 dark:bg-emerald-950/50 border border-emerald-300 dark:border-emerald-500/30 text-emerald-800 dark:text-emerald-400 text-xs font-mono mb-6 shadow-sm">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              <span className="font-semibold tracking-wider uppercase text-[11px]">
+                {personalInfo.status}
+              </span>
             </div>
 
             {/* Main Greeting */}

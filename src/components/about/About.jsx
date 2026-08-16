@@ -2,13 +2,10 @@ import React from 'react';
 import { personalInfo, education } from '../../data/portfolioData';
 import { 
   Cpu, 
-  Code2, 
   Sparkles, 
-  MapPin, 
   GraduationCap, 
   Workflow, 
-  Compass,
-  CheckCircle2
+  Compass
 } from 'lucide-react';
 import tipanImg from '../../assets/tipan.jpg';
 
@@ -64,29 +61,16 @@ export default function About() {
           
           {/* Left Column: Formal Profile Portrait Card */}
           <div className="lg:col-span-5 flex flex-col gap-4">
-            <div className="relative group rounded-3xl overflow-hidden glass-panel border border-slate-200 dark:border-slate-800 p-3 shadow-2xl bg-white/90 dark:bg-slate-900/90 transition-all duration-300">
+            <div className="relative group rounded-3xl overflow-hidden glass-panel border border-slate-200 dark:border-slate-800/80 p-2.5 sm:p-3 shadow-xl bg-white/90 dark:bg-slate-900/90 transition-all duration-300 max-w-md mx-auto lg:max-w-none w-full">
               {/* Glowing subtle backlight */}
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-sky-500/20 to-blue-600/20 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-500 pointer-events-none" />
 
-              <div className="relative aspect-[4/5] sm:aspect-[4/4.5] lg:aspect-[4/5] w-full rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-950">
+              <div className="relative w-full h-[320px] sm:h-[380px] lg:h-[440px] rounded-2xl overflow-hidden bg-slate-100 dark:bg-slate-950">
                 <img
                   src={tipanImg}
-                  alt="Tipan Basel — AI Engineer"
-                  className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+                  alt="Tipan Basel"
+                  className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
-                
-                {/* Bottom Glass Overlay Badge */}
-                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-950/85 backdrop-blur-md border border-slate-800 text-white shadow-xl flex items-center justify-between">
-                  <div>
-                    <h4 className="font-display font-bold text-base text-white tracking-tight">Tipan Basel</h4>
-                    <p className="text-xs font-mono text-cyan-400 mt-0.5">Computer Engineering Graduate</p>
-                    <p className="text-[11px] font-mono text-slate-400 mt-0.5">ACEM • Kathmandu, Nepal</p>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-cyan-950 text-cyan-400 border border-cyan-800/80 shrink-0 shadow-inner">
-                    <GraduationCap className="w-5 h-5" />
-                  </div>
-                </div>
               </div>
             </div>
           </div>
