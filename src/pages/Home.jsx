@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Hero from '../components/hero/Hero';
+import Hero from "../components/Hero/Hero";
 import About from '../components/about/About';
 import FeaturedProject from '../components/projects/FeaturedProject';
 import RetinopathyProject from '../components/projects/RetinopathyProject';
